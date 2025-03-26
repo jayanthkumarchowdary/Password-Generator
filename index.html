@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator <p> by jkch </p> </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <div class="password-box">
+            <input type="text" id="password" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+        <div class="options">
+            <div class="length-container">
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" min="8" max="32" value="12">
+            </div>
+
+            <div class="checkboxes">
+                <label>
+                    <input type="checkbox" id="uppercase" checked>
+                    Uppercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="lowercase" checked>
+                    Lowercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    Numbers
+                </label>
+                <label>
+                    <input type="checkbox" id="symbols" checked>
+                    Special Characters
+                </label>
+            </div>
+        </div>
+
+        <button id="generateBtn">Generate Password</button>
+
+        <div class="strength-meter">
+            <div class="strength-title">Password Strength</div>
+            <div class="meter">
+                <div class="meter-bar"></div>
+            </div>
+            <div class="strength-text">Weak</div>
+        </div>
+
+        <div class="requirements">
+            <h3>Password Requirements:</h3>
+            <ul id="requirementsList">
+                <li data-requirement="length">At least 8 characters</li>
+                <li data-requirement="uppercase">Contains uppercase letter</li>
+                <li data-requirement="lowercase">Contains lowercase letter</li>
+                <li data-requirement="number">Contains number</li>
+                <li data-requirement="special">Contains special character</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

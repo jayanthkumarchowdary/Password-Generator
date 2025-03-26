@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    color: #16213e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.password-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.password-box input:focus {
+    border-color: #16213e;
+}
+
+.password-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #16213e;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.length-container {
+    margin-bottom: 15px;
+}
+
+.length-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.length-container input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #e1e1e1;
+    border-radius: 4px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+#generateBtn {
+    width: 100%;
+    padding: 12px;
+    background: #16213e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+#generateBtn:hover {
+    background: #1a1a2e;
+}
+
+.strength-meter {
+    margin-bottom: 20px;
+}
+
+.strength-title {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.meter {
+    height: 8px;
+    background: #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.meter-bar {
+    height: 100%;
+    width: 0;
+    background: #ff4444;
+    transition: all 0.3s;
+}
+
+.strength-text {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.requirements {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.requirements h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.requirements ul {
+    list-style: none;
+}
+
+.requirements li {
+    color: #666;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.requirements li::before {
+    content: "×";
+    position: absolute;
+    left: 0;
+    color: #ff4444;
+}
+
+.requirements li.met::before {
+    content: "✓";
+    color: #4CAF50;
+}
