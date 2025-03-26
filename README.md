@@ -2,6 +2,8 @@
 
 A **simple and customizable password generator** built using HTML, CSS, and JavaScript. It allows users to generate **secure passwords** with customizable options, including length, uppercase/lowercase letters, numbers, and special characters.
 
+click here : https://jayanthkumarchowdary.github.io/Password-Generator/
+
 ## ✨ Features  
 ✔ **Generate Secure Passwords** – Instantly create random passwords with different character sets.  
 ✔ **Customizable Options** – Choose password length (8-32 characters) and enable/disable character types.  
