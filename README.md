@@ -31,7 +31,8 @@ Clone the repository and open `index.html` in a browser:
 ```sh  
 git clone https://github.com/jayanthkumarchowdary/Password-Generator.git  
 cd Password-Generator  
-open index.html  
+xdg-open index.html
+ 
 ```
 
 ## 🤝 Contributions  
